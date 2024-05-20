@@ -19,4 +19,4 @@ class Solution:
         print(f'leftDept: {leftDept}, rightDept: {rightDept}')
         if abs(leftDept - rightDept) > 1:
             return False
-        return self.isBalanced(root.left) and self.isBalanced(root.right) // checking subtree
+        return self.isBalanced(root.left) and self.isBalanced(root.right) # checking subtree
