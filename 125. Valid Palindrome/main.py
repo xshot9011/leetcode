@@ -1,7 +1,11 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         def isChar(number):
-            return True if (number >= 97 and number <= 122) or (number >= 48 and number <= 57) else False
+            if number >= 97 and number <= 122:
+                return True
+            elif number >= 48 and number <= 57:
+                return True
+            return False
 
         firstPointer = 0
         lastPointer = len(s) - 1
@@ -20,3 +24,4 @@ class Solution:
                 lastPointer -= 1
 
         return True
+            
