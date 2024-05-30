@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/pascals-triangle/description/
+
 class Solution:
     def generate(self, numRows: int) -> List[List[int]]:
         def getNumber(nums: List[int]) -> List[int]:
