@@ -67,7 +67,7 @@ class MyQueue:
             for i in range(len(self.mainStack)):
                 self.subStack.append(self.mainStack.pop())
             self.isCurrentMainStack = False
-        return self.subStack.pop()
+        return self.subStack[-1]
 
     def empty(self) -> bool:
         pointer = None
