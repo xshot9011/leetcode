@@ -38,9 +38,9 @@ class MyQueue:
 
 class MyQueue:
     #       | Time   |
-    # push  |  O(1)  |
-    # pop   |  O(2n) |
-    # peek  |  O(2n) |
+    # push  |  O(n)  |
+    # pop   |  O(n) |
+    # peek  |  O(n) |
     # empty |  O(1)  |
 
     def __init__(self):
@@ -67,7 +67,7 @@ class MyQueue:
             for i in range(len(self.mainStack)):
                 self.subStack.append(self.mainStack.pop())
             self.isCurrentMainStack = False
-        return self.subStack[-1]
+        return self.subStack.pop()
 
     def empty(self) -> bool:
         pointer = None
