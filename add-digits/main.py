@@ -12,4 +12,3 @@ class Solution:
                 ans = 0
             else:
                 return ans
-        return ans
