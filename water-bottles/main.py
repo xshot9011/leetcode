@@ -13,4 +13,6 @@ class Solution:
             # Exchange
             currentFull = currentEmpty // numExchange
             currentEmpty = currentEmpty % numExchange
+        # Time: O(numBottles)
+        # Space: O(1s) 
         return totalDrink
