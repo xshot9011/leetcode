@@ -13,4 +13,6 @@ class Solution:
 
             tIndex += 1
 
+        # Time: O(max(t, s))
+        # Space: O(1)
         return sIndex == len(s) # Last match get +1 == len(s)
