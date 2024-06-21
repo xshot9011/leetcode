@@ -1,0 +1,14 @@
+-- Write your PostgreSQL query statement below
+-- https://leetcode.com/problems/delete-duplicate-emails/
+
+DELETE
+FROM Person
+WHERE id NOT IN (
+    SELECT id
+    FROM (
+        SELECT MIN(id) AS id
+        FROM Person
+        GROUP BY email
+    ) AS TEMP
+);
+
